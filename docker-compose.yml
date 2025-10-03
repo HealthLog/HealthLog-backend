@@ -39,9 +39,10 @@ services:
       redis:
         condition: service_healthy
 
-    # 네트워크
+    # 네트워크 (Supabase와 통신 + Redis 사용)
     networks:
       - embedding-network
+      - supabase-network
 
     # 헬스체크
     healthcheck:
@@ -138,6 +139,9 @@ services:
 networks:
   embedding-network:
     driver: bridge
+  supabase-network:
+    external: true
+    name: supabase_network_fitness_database
 
 volumes:
   model-cache:
