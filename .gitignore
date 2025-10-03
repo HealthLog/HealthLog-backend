@@ -52,3 +52,6 @@ data/
 
 # Prometheus 데이터
 prometheus-data/
+
+# Claude 개발 문서
+CLAUDE.md
