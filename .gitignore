@@ -1,0 +1,54 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# 환경 변수
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# 로그
+*.log
+logs/
+
+# Docker
+docker-compose.override.yml
+
+# 모델 캐시
+.cache/
+models/
+*.bin
+*.safetensors
+
+# 테스트
+.coverage
+htmlcov/
+.pytest_cache/
+
+# 데이터
+data/
+*.db
+*.sqlite
+
+# Prometheus 데이터
+prometheus-data/

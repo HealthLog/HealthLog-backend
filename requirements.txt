@@ -1,0 +1,33 @@
+# ===================================
+# 2025년 10월 기준 최신 안정 버전
+# ===================================
+
+# FastAPI 프레임워크 (최신 안정 버전)
+fastapi==0.118.0
+uvicorn[standard]==0.37.0
+pydantic==2.11.9
+pydantic-settings==2.11.0
+
+# 모델 추론 (EmbeddingGemma 지원)
+numpy<2  # NumPy 2.x 호환성 문제 방지
+torch>=2.3.0,<2.6.0  # transformers 4.56+ 호환
+transformers>=4.56.0  # EmbeddingGemma 지원
+sentencepiece>=0.2.0
+protobuf>=3.20.0,<6.0.0  # transformers 의존성
+
+# 인증 & 보안
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+python-multipart==0.0.20
+
+# Rate Limiting
+slowapi==0.1.9
+redis==5.2.1
+
+# 로깅 & 모니터링
+structlog==24.4.0
+prometheus-client==0.21.1
+
+# 유틸리티
+python-dotenv==1.0.1
+httpx==0.28.1

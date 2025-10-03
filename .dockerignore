@@ -1,0 +1,53 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# 환경 변수
+.env
+.env.*
+!.env.example
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Git
+.git/
+.gitignore
+
+# Docker
+docker-compose.override.yml
+Dockerfile.dev
+
+# 로그
+*.log
+
+# 캐시
+.cache/
+*.cache
+
+# 테스트
+tests/
+test_*.py
+*_test.py
+
+# 문서
+README.md
+docs/
+
+# 기타
+*.md
+!README.md
+.DS_Store
