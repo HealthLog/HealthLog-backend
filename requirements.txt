@@ -10,7 +10,7 @@ pydantic-settings==2.11.0
 
 # 모델 추론 (EmbeddingGemma 지원)
 numpy<2  # NumPy 2.x 호환성 문제 방지
-torch>=2.3.0,<2.6.0  # transformers 4.56+ 호환
+torch>=2.6.0  # transformers 4.56+ 배치 처리 필수
 transformers>=4.56.0  # EmbeddingGemma 지원
 sentencepiece>=0.2.0
 protobuf>=3.20.0,<6.0.0  # transformers 의존성
